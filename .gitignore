@@ -1,0 +1,36 @@
+# secrets
+.env
+*.pem
+*.key
+
+# data and models (host on Hugging Face / GitHub Releases instead)
+data/*
+!data/README.md
+*.step
+*.stp
+*.glb
+*.gltf
+*.blend
+*.pt
+*.onnx
+*.mp4
+*.mov
+runs/
+wandb/
+output/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
