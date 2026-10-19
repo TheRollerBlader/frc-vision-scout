@@ -1,0 +1,1302 @@
+{
+ "schema": "frc-frame/v1",
+ "frame_id": "frame_000001",
+ "seed": 1,
+ "phase": "teleop",
+ "coordinate_frame": {
+  "units": "m",
+  "angles": "rad",
+  "up": "+Z",
+  "origin": "blue alliance wall, right-hand corner as seen by blue drivers (floor level)",
+  "axes": "+X toward red alliance wall, +Y to the left from blue driver view",
+  "field_size": [
+   16.54,
+   8.07
+  ],
+  "rotation_convention": "R = Rz(yaw) @ Ry(pitch) @ Rx(roll) (Blender rotation_mode 'XYZ'); robot +X = front",
+  "robot_origin": "center of frame footprint on the floor; pose.z is the height of that origin"
+ },
+ "field": {
+  "model": "/workspace/frc/models/field/rebuilt_field.step",
+  "model_units": "mm",
+  "cad_to_field": [
+   [
+    -0.001,
+    0.0,
+    0.0,
+    8.27
+   ],
+   [
+    0.0,
+    -0.001,
+    0.0,
+    4.035
+   ],
+   [
+    0.0,
+    0.0,
+    0.001,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "maps": "/workspace/frc/field/field_maps.npz"
+ },
+ "robots": [
+  {
+   "id": "red_1",
+   "alliance": "red",
+   "bumper_color": "red",
+   "team_number": 419,
+   "manifest_key": "placeholder",
+   "model_file": "placeholder",
+   "height": 0.5105,
+   "footprint": {
+    "length": 0.5583,
+    "width": 0.7761,
+    "bumper_depth": 0.085,
+    "outline_xy": [
+     [
+      5.941,
+      2.5023
+     ],
+     [
+      5.6445,
+      3.1674
+     ],
+     [
+      6.5086,
+      3.5526
+     ],
+     [
+      6.8051,
+      2.8874
+     ]
+    ]
+   },
+   "pose": {
+    "x": 6.2248,
+    "y": 3.0274,
+    "z": 0.0,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": -1.1515
+   },
+   "velocity": {
+    "vx": -1.5835,
+    "vy": -0.058,
+    "vz": 0.0,
+    "wz": -0.5177
+   },
+   "zone": "neutral",
+   "on_bump": false,
+   "under_trench": false,
+   "floor_fit_rms": 0.0
+  },
+  {
+   "id": "red_2",
+   "alliance": "red",
+   "bumper_color": "red",
+   "team_number": 9058,
+   "manifest_key": "placeholder",
+   "model_file": "placeholder",
+   "height": 0.7545,
+   "footprint": {
+    "length": 0.7865,
+    "width": 0.641,
+    "bumper_depth": 0.085,
+    "outline_xy": [
+     [
+      3.3996,
+      2.13
+     ],
+     [
+      3.7087,
+      1.2247
+     ],
+     [
+      2.9412,
+      0.9627
+     ],
+     [
+      2.6322,
+      1.8679
+     ]
+    ]
+   },
+   "pose": {
+    "x": 3.1704,
+    "y": 1.5463,
+    "z": 0.0,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": 1.8998
+   },
+   "velocity": {
+    "vx": 0.0,
+    "vy": 0.0,
+    "vz": 0.0,
+    "wz": 0.0
+   },
+   "zone": "blue_alliance",
+   "on_bump": false,
+   "under_trench": false,
+   "floor_fit_rms": 0.0
+  },
+  {
+   "id": "red_3",
+   "alliance": "red",
+   "bumper_color": "red",
+   "team_number": 9874,
+   "manifest_key": "placeholder",
+   "model_file": "placeholder",
+   "height": 0.4647,
+   "footprint": {
+    "length": 0.6709,
+    "width": 0.611,
+    "bumper_depth": 0.085,
+    "outline_xy": [
+     [
+      10.0566,
+      4.3407
+     ],
+     [
+      10.0033,
+      5.1799
+     ],
+     [
+      10.7827,
+      5.2294
+     ],
+     [
+      10.836,
+      4.3902
+     ]
+    ]
+   },
+   "pose": {
+    "x": 10.4196,
+    "y": 4.785,
+    "z": 0.0,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": -1.5074
+   },
+   "velocity": {
+    "vx": -0.047,
+    "vy": 2.4693,
+    "vz": 0.0,
+    "wz": -1.0126
+   },
+   "zone": "neutral",
+   "on_bump": false,
+   "under_trench": false,
+   "floor_fit_rms": 0.0
+  },
+  {
+   "id": "blue_1",
+   "alliance": "blue",
+   "bumper_color": "blue",
+   "team_number": 1730,
+   "manifest_key": "placeholder",
+   "model_file": "placeholder",
+   "height": 0.5325,
+   "footprint": {
+    "length": 0.6341,
+    "width": 0.6956,
+    "bumper_depth": 0.085,
+    "outline_xy": [
+     [
+      9.5715,
+      3.4003
+     ],
+     [
+      9.4472,
+      2.6059
+     ],
+     [
+      8.592,
+      2.7397
+     ],
+     [
+      8.7163,
+      3.5342
+     ]
+    ]
+   },
+   "pose": {
+    "x": 9.0817,
+    "y": 3.07,
+    "z": 0.0,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": 1.4156
+   },
+   "velocity": {
+    "vx": 0.355,
+    "vy": 2.2685,
+    "vz": 0.0,
+    "wz": 1.3383
+   },
+   "zone": "neutral",
+   "on_bump": false,
+   "under_trench": false,
+   "floor_fit_rms": 0.0
+  },
+  {
+   "id": "blue_2",
+   "alliance": "blue",
+   "bumper_color": "blue",
+   "team_number": 11383,
+   "manifest_key": "placeholder",
+   "model_file": "placeholder",
+   "height": 1.1274,
+   "footprint": {
+    "length": 0.7674,
+    "width": 0.7124,
+    "bumper_depth": 0.085,
+    "outline_xy": [
+     [
+      1.1719,
+      5.1214
+     ],
+     [
+      2.0983,
+      5.2651
+     ],
+     [
+      2.2335,
+      4.3932
+     ],
+     [
+      1.3071,
+      4.2495
+     ]
+    ]
+   },
+   "pose": {
+    "x": 1.7027,
+    "y": 4.7573,
+    "z": 0.0,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": -2.9877
+   },
+   "velocity": {
+    "vx": 0.0,
+    "vy": 0.0,
+    "vz": 0.0,
+    "wz": 0.0
+   },
+   "zone": "blue_alliance",
+   "on_bump": false,
+   "under_trench": false,
+   "floor_fit_rms": 0.0
+  },
+  {
+   "id": "blue_3",
+   "alliance": "blue",
+   "bumper_color": "blue",
+   "team_number": 11401,
+   "manifest_key": "placeholder",
+   "model_file": "placeholder",
+   "height": 0.4677,
+   "footprint": {
+    "length": 0.841,
+    "width": 0.7048,
+    "bumper_depth": 0.085,
+    "outline_xy": [
+     [
+      3.8901,
+      6.5543
+     ],
+     [
+      2.8948,
+      6.7318
+     ],
+     [
+      3.0484,
+      7.593
+     ],
+     [
+      4.0437,
+      7.4155
+     ]
+    ]
+   },
+   "pose": {
+    "x": 3.4692,
+    "y": 7.0737,
+    "z": 0.0,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": -0.1765
+   },
+   "velocity": {
+    "vx": 0.1045,
+    "vy": 0.5461,
+    "vz": 0.0,
+    "wz": -2.2147
+   },
+   "zone": "blue_alliance",
+   "on_bump": false,
+   "under_trench": false,
+   "floor_fit_rms": 0.0
+  }
+ ],
+ "fuel": [
+  {
+   "id": 0,
+   "x": 8.5292,
+   "y": 4.0439,
+   "z": 0.075,
+   "state": "ground",
+   "vx": -0.0989,
+   "vy": 0.2695,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 1,
+   "x": 0.1443,
+   "y": 5.7241,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 2,
+   "x": 6.1925,
+   "y": 4.2202,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 3,
+   "x": 8.5148,
+   "y": 5.2883,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 4,
+   "x": 0.305,
+   "y": 5.6474,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 5,
+   "x": 9.6219,
+   "y": 3.1646,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 6,
+   "x": 6.1258,
+   "y": 4.8729,
+   "z": 0.075,
+   "state": "ground",
+   "vx": -0.0896,
+   "vy": -0.4334,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 7,
+   "x": 8.3432,
+   "y": 1.0077,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 8,
+   "x": 0.2353,
+   "y": 5.8861,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 9,
+   "x": 0.1347,
+   "y": 6.6907,
+   "z": 0.075,
+   "state": "ground",
+   "vx": -0.0737,
+   "vy": -1.1732,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 10,
+   "x": 0.4204,
+   "y": 5.8556,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 11,
+   "x": 9.4419,
+   "y": 0.7651,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 12,
+   "x": 0.1395,
+   "y": 6.0448,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 13,
+   "x": 8.0154,
+   "y": 1.0852,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 14,
+   "x": 7.1476,
+   "y": 0.7507,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 15,
+   "x": 8.7103,
+   "y": 0.1571,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 16,
+   "x": 8.4978,
+   "y": 0.9894,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 17,
+   "x": 0.3945,
+   "y": 6.7978,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 18,
+   "x": 9.0919,
+   "y": 0.9597,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 19,
+   "x": 0.6217,
+   "y": 6.7248,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 20,
+   "x": 0.427,
+   "y": 6.1588,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 21,
+   "x": 6.7965,
+   "y": 4.5411,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 22,
+   "x": 6.4033,
+   "y": 4.517,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 23,
+   "x": 8.1722,
+   "y": 0.9253,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 24,
+   "x": 6.5641,
+   "y": 4.6545,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 25,
+   "x": 0.8269,
+   "y": 6.2495,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 26,
+   "x": 10.5146,
+   "y": 6.4172,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 27,
+   "x": 0.1569,
+   "y": 6.2009,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 28,
+   "x": 9.8896,
+   "y": 5.8365,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 29,
+   "x": 0.9433,
+   "y": 5.9401,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 30,
+   "x": 9.2986,
+   "y": 1.1513,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 31,
+   "x": 0.3684,
+   "y": 6.017,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 32,
+   "x": 9.8919,
+   "y": 3.1514,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 33,
+   "x": 9.7275,
+   "y": 0.7552,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 34,
+   "x": 9.9029,
+   "y": 1.2065,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 35,
+   "x": 4.2706,
+   "y": 0.3313,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 36,
+   "x": 2.3729,
+   "y": 0.2043,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 37,
+   "x": 2.8592,
+   "y": 0.1552,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 38,
+   "x": 4.5231,
+   "y": 0.1449,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 39,
+   "x": 4.6694,
+   "y": 0.2524,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 40,
+   "x": 2.1712,
+   "y": 0.2598,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 41,
+   "x": 2.3027,
+   "y": 0.3494,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.1541,
+   "vy": 0.0123,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 42,
+   "x": 3.1608,
+   "y": 0.1479,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 43,
+   "x": 4.8901,
+   "y": 0.1939,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 44,
+   "x": 3.7439,
+   "y": 0.193,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 45,
+   "x": 2.655,
+   "y": 0.3384,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 46,
+   "x": 3.8949,
+   "y": 0.1533,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 47,
+   "x": 2.9755,
+   "y": 0.2545,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 48,
+   "x": 3.4153,
+   "y": 3.5056,
+   "z": 0.075,
+   "state": "ground",
+   "vx": -1.0178,
+   "vy": -0.5892,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 49,
+   "x": 14.404,
+   "y": 3.0967,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 50,
+   "x": 3.8505,
+   "y": 5.8548,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 51,
+   "x": 8.0027,
+   "y": 6.3541,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 52,
+   "x": 5.949,
+   "y": 4.3768,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 53,
+   "x": 16.2261,
+   "y": 5.9077,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 54,
+   "x": 6.4574,
+   "y": 4.0125,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 55,
+   "x": 6.3554,
+   "y": 1.9096,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 56,
+   "x": 15.7189,
+   "y": 1.8258,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 57,
+   "x": 1.3689,
+   "y": 5.2433,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 58,
+   "x": 6.0959,
+   "y": 4.5392,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 59,
+   "x": 9.7556,
+   "y": 4.0536,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 60,
+   "x": 0.6222,
+   "y": 0.8267,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 61,
+   "x": 2.6202,
+   "y": 1.6106,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 62,
+   "x": 13.8341,
+   "y": 1.7665,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 63,
+   "x": 9.9152,
+   "y": 4.2766,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  },
+  {
+   "id": 64,
+   "x": 13.4655,
+   "y": 1.7551,
+   "z": 0.075,
+   "state": "ground",
+   "vx": 0.0,
+   "vy": 0.0,
+   "vz": 0.0,
+   "source": "teleop"
+  }
+ ],
+ "fuel_stats": {
+  "candidates": 182,
+  "kept_by_prob": 98,
+  "rejected": {
+   "invalid_surface": 20,
+   "in_robot": 0,
+   "overlap": 13
+  },
+  "clusters": [
+   {
+    "x": 9.4764,
+    "y": 1.0384,
+    "sigma": 0.4257,
+    "type": "neutral"
+   },
+   {
+    "x": 0.4555,
+    "y": 5.9184,
+    "sigma": 0.276,
+    "type": "depot"
+   },
+   {
+    "x": 9.6506,
+    "y": 2.9456,
+    "sigma": 0.469,
+    "type": "neutral"
+   },
+   {
+    "x": 0.1389,
+    "y": 5.7348,
+    "sigma": 0.1942,
+    "type": "depot"
+   },
+   {
+    "x": 0.395,
+    "y": 6.4686,
+    "sigma": 0.3324,
+    "type": "depot"
+   },
+   {
+    "x": 9.8505,
+    "y": 4.8177,
+    "sigma": 0.7506,
+    "type": "neutral"
+   },
+   {
+    "x": 8.2722,
+    "y": 0.6221,
+    "sigma": 0.4931,
+    "type": "neutral"
+   },
+   {
+    "x": 6.4559,
+    "y": 4.4954,
+    "sigma": 0.377,
+    "type": "hub_exit"
+   }
+  ],
+  "wall_piles": [
+   {
+    "wall": "y0",
+    "along": 3.7242,
+    "sigma": 0.974
+   }
+  ],
+  "ground": 65,
+  "airborne": 0
+ },
+ "warnings": [],
+ "config": {
+  "field_model": "/workspace/frc/models/field/rebuilt_field.step",
+  "maps": "/workspace/frc/field/field_maps.npz",
+  "regions": "/workspace/frc/field/regions.json",
+  "robots": {
+   "count_per_alliance": 3,
+   "bumper_depth": 0.085,
+   "height_margin": 0.02,
+   "team_number_range": [
+    1,
+    11999
+   ],
+   "zone_weights": {
+    "own": 0.35,
+    "neutral": 0.45,
+    "opponent": 0.15,
+    "barrier": 0.05
+   },
+   "barrier_targets": {
+    "trench": 0.35,
+    "bump": 0.45,
+    "any": 0.2
+   },
+   "min_robot_gap": 0.005,
+   "trench_yaw_sigma_deg": 4.0,
+   "zone_redraw_every": 40,
+   "max_plane_rms": 0.03,
+   "attempts_per_robot": 600,
+   "frame_attempts": 4,
+   "edge_margin": 0.0,
+   "placeholder": {
+    "length": [
+     0.55,
+     0.85
+    ],
+    "width": [
+     0.55,
+     0.85
+    ],
+    "short_prob": 0.5,
+    "short_height": [
+     0.45,
+     0.56
+    ],
+    "tall_height": [
+     0.56,
+     1.15
+    ]
+   },
+   "velocity": {
+    "stationary_prob": 0.25,
+    "speed_triangular": [
+     0.3,
+     2.5,
+     4.5
+    ],
+    "swerve_prob": 0.7,
+    "reverse_prob": 0.2,
+    "wz_sigma": 2.0,
+    "wz_clip": 6.0,
+    "bump_dir_sigma_deg": 10.0,
+    "bump_yaw_align_prob": 0.7,
+    "bump_yaw_sigma_deg": 15.0,
+    "wall_lookahead_s": 0.3,
+    "obstacle_lookahead_s": 0.4
+   }
+  },
+  "phase": {
+   "match_start_prob": 0.1
+  },
+  "match_start": {
+   "fuel_jitter": 0.006,
+   "fuel_jitter_max": 0.0012,
+   "include_offfield_staged": false,
+   "robot_moving_prob": 0.0,
+   "line_gap": [
+    0.0,
+    0.8
+   ],
+   "yaw_sigma_deg": 15.0,
+   "yaw_random_cardinal_prob": 0.3
+  },
+  "fuel": {
+   "keep_prob": 0.6,
+   "max": 300,
+   "candidate_frac": [
+    0.4,
+    1.0
+   ],
+   "radius": 0.075,
+   "min_center_dist": 0.15,
+   "min_clearance": 0.16,
+   "max_slope": 0.05,
+   "mixture": {
+    "cluster": 0.55,
+    "wall": 0.2,
+    "uniform": 0.25
+   },
+   "clusters": {
+    "count": [
+     3,
+     8
+    ],
+    "sigma": [
+     0.2,
+     0.8
+    ],
+    "center_weights": {
+     "hub_exit": 0.3,
+     "depot": 0.15,
+     "center_pile": 0.1,
+     "neutral": 0.3,
+     "alliance": 0.15
+    }
+   },
+   "wall": {
+    "piles": [
+     1,
+     4
+    ],
+    "length_sigma": [
+     0.3,
+     1.5
+    ],
+    "offset_sigma": 0.12,
+    "wall_weights": {
+     "guardrail": 0.75,
+     "alliance_wall": 0.25
+    }
+   },
+   "nudge_retries": 4,
+   "nudge_sigma": 0.08,
+   "rolling_prob": 0.1,
+   "rolling_speed": [
+    0.1,
+    1.5
+   ]
+  },
+  "airborne": {
+   "shoot_prob": 0.3,
+   "balls": [
+    1,
+    6
+   ],
+   "launch_z": 0.5,
+   "g": 9.81,
+   "hub_target_z": 1.83,
+   "hub_apex_z": [
+    2.4,
+    3.4
+   ],
+   "max_hub_dist": 7.5,
+   "pass_prob": 0.5,
+   "pass_apex_z": [
+    2.5,
+    4.0
+   ],
+   "spacing_s": [
+    0.08,
+    0.25
+   ]
+  },
+  "robot_source": "placeholder"
+ }
+}

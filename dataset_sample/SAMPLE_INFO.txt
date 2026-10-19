@@ -1,0 +1,1 @@
+Seeded (random.Random(42)) sample from yolo.zip: 160 val + 40 train drawn, 72 kept to fit size cap (val 72, train 0). Images resized with sips to 1280 px wide JPEG quality 80. Filenames prefixed with split. Labels: YOLO txt (0 bumper_red, 1 bumper_blue, 2 fuel), normalized so unaffected by resize.
