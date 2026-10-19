@@ -1,8 +1,0 @@
-cff-version: 1.2.0
-message: "If you use this software, you must credit it as described in LICENSE."
-title: "frc-vision-scout"
-authors:
-  - name: "Krish Bharadiya"
-repository-code: "https://github.com/TheRollerBlader/frc-vision-scout"
-date-released: "2026-10-01"
-version: "0.0.1"

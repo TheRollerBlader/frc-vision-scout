@@ -1,0 +1,7 @@
+path: /workspace/yolo
+train: images/train
+val: images/val
+names:
+  0: bumper_red
+  1: bumper_blue
+  2: fuel

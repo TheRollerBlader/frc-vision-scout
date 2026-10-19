@@ -1,0 +1,101 @@
+{
+ "fonts": [
+  {
+   "name": "Anton",
+   "file": "render/assets/fonts/Anton-Regular.ttf"
+  },
+  {
+   "name": "Bebas Neue",
+   "file": "render/assets/fonts/BebasNeue-Regular.ttf"
+  },
+  {
+   "name": "Oswald:style=Bold",
+   "file": "render/assets/fonts/Oswald-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Roboto:style=Black",
+   "file": "render/assets/fonts/Roboto-VariableFont_wdth,wght.ttf"
+  },
+  {
+   "name": "Roboto Condensed:style=Bold",
+   "file": "render/assets/fonts/RobotoCondensed-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Archivo Black",
+   "file": "render/assets/fonts/ArchivoBlack-Regular.ttf"
+  },
+  {
+   "name": "Russo One",
+   "file": "render/assets/fonts/RussoOne-Regular.ttf"
+  },
+  {
+   "name": "Teko:style=SemiBold",
+   "file": "render/assets/fonts/Teko-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Orbitron:style=Bold",
+   "file": "render/assets/fonts/Orbitron-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Allerta Stencil",
+   "file": "render/assets/fonts/AllertaStencil-Regular.ttf"
+  },
+  {
+   "name": "Barlow Condensed:style=Bold",
+   "file": "render/assets/fonts/BarlowCondensed-Bold.ttf"
+  },
+  {
+   "name": "Exo 2:style=Bold",
+   "file": "render/assets/fonts/Exo2-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Rajdhani:style=Bold",
+   "file": "render/assets/fonts/Rajdhani-Bold.ttf"
+  },
+  {
+   "name": "Chakra Petch:style=Bold",
+   "file": "render/assets/fonts/ChakraPetch-Bold.ttf"
+  },
+  {
+   "name": "Black Ops One",
+   "file": "render/assets/fonts/BlackOpsOne-Regular.ttf"
+  },
+  {
+   "name": "Montserrat:style=ExtraBold",
+   "file": "render/assets/fonts/Montserrat-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Bungee",
+   "file": "render/assets/fonts/Bungee-Regular.ttf"
+  },
+  {
+   "name": "Alfa Slab One",
+   "file": "render/assets/fonts/AlfaSlabOne-Regular.ttf"
+  },
+  {
+   "name": "Graduate",
+   "file": "render/assets/fonts/Graduate-Regular.ttf"
+  },
+  {
+   "name": "Staatliches",
+   "file": "render/assets/fonts/Staatliches-Regular.ttf"
+  },
+  {
+   "name": "Big Shoulders Display:style=Black",
+   "file": "render/assets/fonts/BigShouldersDisplay[wght].ttf"
+  },
+  {
+   "name": "Kanit:style=Bold",
+   "file": "render/assets/fonts/Kanit-Bold.ttf"
+  },
+  {
+   "name": "Teko:style=Bold",
+   "file": "render/assets/fonts/Teko-VariableFont_wght.ttf"
+  },
+  {
+   "name": "Fjalla One",
+   "file": "render/assets/fonts/FjallaOne-Regular.ttf"
+  }
+ ],
+ "note": "Google Fonts (OFL/Apache); used for bumper numbers"
+}

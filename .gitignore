@@ -1,36 +1,114 @@
-# secrets
+# Model weights (intentionally not published)
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.mlmodel
+
+# Datasets (too large for git)
+*.tar
+*.tar.gz
+*.zip
+frc_dataset/
+yolo/
+runs/
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# CAD files
+*.step
+*.stp
+*.STEP
+*.STP
+*.iges
+*.igs
+
+# Blender files
+*.blend
+*.blend1
+*.blend2
+
+# GLB/GLTF models (generated)
+*.glb
+*.gltf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment
 .env
+.env.local
+*.bak
+*.bak.*
+
+# Logs
+*.log
+nohup.out
+
+# Cache
+.cache/
+cache/
+*.cache
+
+# Secrets (should never be committed)
+*_cookies*.json
 *.pem
 *.key
 
-# data and models (host on Hugging Face / GitHub Releases instead)
-data/*
-!data/README.md
-*.step
-*.stp
-*.glb
-*.gltf
-*.blend
-*.pt
-*.onnx
-*.mp4
-*.mov
-runs/
-wandb/
-output/
+# Large data files
+all_bounding_box_detections.csv
+all_robot_trajectories.csv
+trajectories/
 
-# python
-__pycache__/
-*.pyc
-.venv/
-venv/
-*.egg-info/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
-
-# os / editor
-.DS_Store
-.vscode/
-.idea/
+# Fonts (not redistributable)
+*.ttf
+*.otf
+*.woff
+*.woff2
