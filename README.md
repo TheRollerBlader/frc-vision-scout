@@ -47,6 +47,44 @@
 
 ---
 
+
+---
+
+## 3D Field Reconstruction & Spatial Match Analytics
+
+<div align="center">
+  <img src="assets/3d_preview.gif" alt="FRC Vision Scout 3D Perspective Multi-Robot Tracking Simulation" width="100%" />
+  <p><em><b>3D Multi-Robot Tracking Simulation:</b> Real-time 3D perspective projection on the 16.54m × 8.21m FRC playing field with AprilTag fiducial reference frames, 3D robot bounding volumes, heading vectors, dynamic trajectory trails, and match broadcast HUD.</em></p>
+</div>
+
+### 1. 3D Field Occupancy & Lane Utilization Topography
+
+<p align="center">
+  <img src="assets/3d_surface.png" alt="3D Field Occupancy Topography" width="100%" />
+</p>
+
+Continuous 3D field occupancy density surface $\mathcal{D}(x, y)$ mapping autonomous transit lanes, Speaker shooting zones (.5	ext{ s/m}^2$ peak), Amp cycling terminals, and midfield defensive scrum chokepoints.
+
+---
+
+### 2. Match Heatmaps & Dynamic Shot Telemetry
+
+<p align="center">
+  <img src="assets/results_heatmap.png" alt="Top-Down 2D Match Heatmap and Shot Spotting" width="100%" />
+</p>
+
+Multi-panel match analytics featuring top-down Gaussian spatial density, discrete Speaker/Amp shot event localization (Blue: 23/26, Red: 20/24), scoring cycle duration distributions, and auto-align accuracy gains.
+
+---
+
+### 3. Tracking & Calibration Benchmark Suite
+
+<p align="center">
+  <img src="assets/performance_metrics.png" alt="4-Panel Tracking and Calibration Benchmark Suite" width="100%" />
+</p>
+
+Empirical performance evaluation demonstrating YOLO11s Pareto frontiers ($>60	ext{ FPS}$ on desktop GPU), ByteTrack ID switch resilience through scrums, $<3.1	ext{ cm}$ camera homography ground error, and automated vs human scouting accuracy parity.
+
 ## Pipeline
 
 ```mermaid
