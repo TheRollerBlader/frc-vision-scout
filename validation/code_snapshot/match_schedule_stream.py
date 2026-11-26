@@ -5,8 +5,9 @@ rosters, correlates historical Statbotics EPA metrics, and auto-dispatches
 vision tracking job manifests for FRC scouting analysis.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
 from typing import Dict, List, Optional, Any
+import json
 import time
 
 
@@ -140,3 +141,45 @@ class MatchScheduleStream:
             for job in self.cached_jobs.values()
             if job.match_key not in scouted_set and job.vision_ready
         ]
+
+    def sync_event_schedule(
+        self,
+        tba_client: Any,
+        sync_engine: Any,
+        year: int,
+        scouted_keys: Optional[List[str]] = None,
+    ) -> List[ScheduledMatchJob]:
+        """Fetches live TBA event matches and enriches each unique team with Statbotics EPA."""
+        raw_matches = tba_client.get_event_matches(self.event_key) or []
+        unique_teams = set()
+        for match in raw_matches:
+            alliances = match.get("alliances", {})
+            for color in ("red", "blue"):
+                for tk in alliances.get(color, {}).get("team_keys", []):
+                    raw_num = str(tk).replace("frc", "")
+                    if raw_num.isdigit():
+                        unique_teams.add(int(raw_num))
+
+        team_epa_map: Dict[int, Dict[str, float]] = {}
+        for team_num in sorted(unique_teams):
+            epa = sync_engine.fetch_team_epa(team_num, year)
+            if epa is not None:
+                team_epa_map[team_num] = {
+                    "total": float(epa.epa_total),
+                    "auto": float(epa.epa_auto),
+                    "teleop": float(epa.epa_teleop),
+                }
+
+        self.process_tba_matches(raw_matches, team_epa_map=team_epa_map)
+        return self.get_upcoming_unscouted_matches(scouted_keys or [])
+
+    def export_queue_manifest(self, scouted_keys: Optional[List[str]] = None) -> str:
+        """Serializes vision-ready unscouted match jobs to JSON for worker dispatch."""
+        queue = self.get_upcoming_unscouted_matches(scouted_keys or [])
+        payload = {
+            "event_key": self.event_key,
+            "generated_at": int(time.time()),
+            "pending_count": len(queue),
+            "jobs": [asdict(job) for job in queue],
+        }
+        return json.dumps(payload, indent=2)

@@ -1,5 +1,7 @@
+import json
 import pytest
 from match_schedule_stream import MatchScheduleStream, ScheduledMatchJob
+from scouting_sync_engine import StatboticsEPA
 
 
 class TestMatchScheduleStream:
@@ -75,3 +77,64 @@ class TestMatchScheduleStream:
         unscouted = stream.get_upcoming_unscouted_matches(scouted_keys=["2026txirv_qm1"])
         assert len(unscouted) == 1
         assert unscouted[0].match_key == "2026txirv_qm2"
+
+    def test_sync_event_schedule_and_export_manifest(self):
+        class StubTBA:
+            def get_event_matches(self, event_key):
+                assert event_key == "2026txirv"
+                return [
+                    {
+                        "key": "2026txirv_qm1",
+                        "comp_level": "qm",
+                        "match_number": 1,
+                        "alliances": {
+                            "red": {"team_keys": ["frc254", "frc1678", "frc5411"]},
+                            "blue": {"team_keys": ["frc118", "frc148", "frc3310"]},
+                        },
+                    },
+                    {
+                        "key": "2026txirv_qm2",
+                        "comp_level": "qm",
+                        "match_number": 2,
+                        "alliances": {
+                            "red": {"team_keys": ["frc254", "frc118", "frc5411"]},
+                            "blue": {"team_keys": ["frc1678", "frc148", "frc3310"]},
+                        },
+                    },
+                ]
+
+        class StubSyncEngine:
+            def __init__(self):
+                self.fetched_teams = []
+
+            def fetch_team_epa(self, team, year):
+                self.fetched_teams.append((team, year))
+                return StatboticsEPA(
+                    team_number=team,
+                    year=year,
+                    epa_total=40.0 if team == 254 else 30.0,
+                    epa_auto=10.0,
+                    epa_teleop=20.0,
+                    epa_endgame=5.0,
+                    winrate=0.65,
+                )
+
+        stream = MatchScheduleStream(event_key="2026txirv")
+        sync_engine = StubSyncEngine()
+        unscouted = stream.sync_event_schedule(
+            tba_client=StubTBA(),
+            sync_engine=sync_engine,
+            year=2026,
+            scouted_keys=["2026txirv_qm1"],
+        )
+
+        # Unique teams should be fetched exactly once each (6 teams across 2 matches)
+        assert len(sync_engine.fetched_teams) == 6
+        assert len(unscouted) == 1
+        assert unscouted[0].match_key == "2026txirv_qm2"
+        assert unscouted[0].predicted_red_score == 100.0  # 40 + 30 + 30
+
+        manifest = json.loads(stream.export_queue_manifest(scouted_keys=["2026txirv_qm1"]))
+        assert manifest["event_key"] == "2026txirv"
+        assert manifest["pending_count"] == 1
+        assert manifest["jobs"][0]["match_key"] == "2026txirv_qm2"
