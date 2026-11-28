@@ -2,7 +2,6 @@
 Unit tests for the temporal bumper majority voting filter in frc-vision-scout.
 """
 
-import pytest
 from validation.code_snapshot.bumper_filter import (
     BumperDetection,
     TemporalBumperFilter,

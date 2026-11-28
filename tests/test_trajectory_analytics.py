@@ -3,13 +3,10 @@ Unit tests for the kinematic trajectory & cycle analytics engine in frc-vision-s
 """
 
 import pytest
-import math
 from validation.code_snapshot.trajectory_analytics import (
     KinematicKalmanFilter,
     TrajectoryAnalyticsEngine,
-    KinematicState,
     CycleEvent,
-    TrajectorySummary,
 )
 
 
@@ -37,7 +34,7 @@ class TestKinematicKalmanFilter:
             true_x = 2.0 * t
             noisy_x = true_x + (0.05 if step % 2 == 0 else -0.05)
             kf.predict(dt)
-            updated = kf.update(noisy_x, 0.0)
+            kf.update(noisy_x, 0.0)
 
         # Velocity in x should converge close to 2.0 m/s
         est_vx = kf.x[2]

@@ -9,8 +9,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "validation", "
 
 from bumper_distortion_guard import (
     BumperBox,
-    BumperDistortionMetrics,
-    GatedBumperOCRResult,
     evaluate_bumper_distortion,
     gate_bumper_ocr_detection,
 )

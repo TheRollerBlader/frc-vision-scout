@@ -7,8 +7,6 @@ Comprehensive unit and boundary tests covering:
 3. Scoring cycle boundary hysteresis and zone classification stability.
 """
 
-import math
-import pytest
 from validation.code_snapshot.bumper_filter import (
     BumperDetection,
     TemporalBumperFilter,

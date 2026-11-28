@@ -1,8 +1,7 @@
 import os
 import tempfile
 from pathlib import Path
-import pytest
-from config import AppConfig, load_dotenv, is_writable, detect_gdrive_directory
+from config import AppConfig, load_dotenv, is_writable
 
 
 class TestConfig:

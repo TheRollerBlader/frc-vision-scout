@@ -4,8 +4,6 @@ Generated for scheduled milestone: Testing & Verification (2026-11-27).
 Verifies deterministic numeric stability, monotonic ordering, and boundary handling.
 """
 
-import math
-import pytest
 
 
 class TestDailyInvariantVerification:

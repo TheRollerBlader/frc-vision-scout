@@ -6,7 +6,6 @@ from pydantic import ValidationError
 from validation.code_snapshot.calibration_schema import (
     Point2D,
     CalibrationPointPair,
-    FieldGeometrySpec,
     HomographyCalibrationConfig,
     evaluate_homography_quality,
 )

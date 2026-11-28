@@ -4,10 +4,9 @@ and upper-chassis appearance embedding in frc-vision-scout.
 """
 
 import numpy as np
-import pytest
 from scipy.optimize import linear_sum_assignment
 
-from validation.code_snapshot.evaluator import DetectionBox, RobotCluster
+from validation.code_snapshot.evaluator import RobotCluster
 from validation.code_snapshot.robot_identifier import (
     RobotTelemetrySummary,
     closed_set_string_similarity,

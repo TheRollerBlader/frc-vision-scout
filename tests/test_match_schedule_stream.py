@@ -1,6 +1,5 @@
 import json
-import pytest
-from match_schedule_stream import MatchScheduleStream, ScheduledMatchJob
+from match_schedule_stream import MatchScheduleStream
 from scouting_sync_engine import StatboticsEPA
 
 
